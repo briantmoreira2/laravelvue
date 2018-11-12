@@ -9,5 +9,6 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
+    //probando gitfow feature1
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
