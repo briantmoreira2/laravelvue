@@ -88,7 +88,7 @@
             },
             fetchIt(){
                 this.loading = true;
-                axios.get('notebook?token=' + this.token).then((response) => {
+                axios.get('notebook').then((response) => {
                     this.notebooks = response.data;
                     this.loading = false
                 });

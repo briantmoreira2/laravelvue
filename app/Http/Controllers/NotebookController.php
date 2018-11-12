@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 
 class NotebookController extends Controller
 {
-    
+
     function __construct()
     {
-        $this->middleware('jwt.auth')->only('index');
+      
     }
     /**
     * Display a listing of the resource.
@@ -22,7 +22,7 @@ class NotebookController extends Controller
     {
         return Notebook::latest()->with('user')->get();
     }
-    
+
     /**
     * Show the form for creating a new resource.
     *
@@ -32,7 +32,7 @@ class NotebookController extends Controller
     {
         //
     }
-    
+
     /**
     * Store a newly created resource in storage.
     *
@@ -45,15 +45,15 @@ class NotebookController extends Controller
         'name'=>'required',
         'body'=>'required',
         ]);
-        
+
         $user=User::find(1);
-        
+
         $user->notebook()->create($request->all());
-        
-        
+
+
         return "success";
     }
-    
+
     /**
     * Display the specified resource.
     *
@@ -64,7 +64,7 @@ class NotebookController extends Controller
     {
         //
     }
-    
+
     /**
     * Show the form for editing the specified resource.
     *
@@ -75,7 +75,7 @@ class NotebookController extends Controller
     {
         //
     }
-    
+
     /**
     * Update the specified resource in storage.
     *
@@ -86,10 +86,10 @@ class NotebookController extends Controller
     public function update(Request $request, Notebook $notebook)
     {
         $notebook->update($request->all());
-        
+
         return "success";
     }
-    
+
     /**
     * Remove the specified resource from storage.
     *
