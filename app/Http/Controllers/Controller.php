@@ -9,5 +9,6 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
+    //probando gitflow feature1 dd
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
