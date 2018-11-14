@@ -12,12 +12,12 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-       
+
     </head>
     <body>
-        
+
         <div id="app">
-        
+
             <div class="container">
 
                 @include('partials.nav')
@@ -25,7 +25,7 @@
                 <!-- Main component for a primary marketing message or call to action -->
                     <div class="jumbotron">
                     <router-view></router-view>
-          
+
                     </div>
 
               </div> <!-- /container -->
