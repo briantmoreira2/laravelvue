@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth'); encontre el error en la release
+        //$this->middleware('auth'); encontre el error en la release segunda release
     }
 
     /**
