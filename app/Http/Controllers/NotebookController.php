@@ -11,7 +11,7 @@ class NotebookController extends Controller
 
     function __construct()
     {
-      
+      //feature 2
     }
     /**
     * Display a listing of the resource.
